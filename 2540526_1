@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Matsigenka phonology problem</title>
+
+  <style>
+    body {
+      font-family: "Charis SIL", "Doulos SIL", "Noto Serif", serif;
+      line-height: 1.6;
+      max-width: 780px;
+      margin: 2rem auto;
+      font-size: 20px;
+    }
+
+    .exam-block {
+      border: 1px solid #bbb;
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .data {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 21px;
+    }
+
+    .item {
+      white-space: pre;
+    }
+
+    .small-note {
+      font-size: 0.85em;
+      color: #555;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="exam-block" id="exam-question">
+
+  <p>
+    Matsigenka is an indigenous language of southeastern Peru spoken by about
+    10,000 people in the foothills between the Amazon rainforest and the Andes.
+  </p>
+
+  <div class="data">
+    <div class="item">a. [saniɾi]     ‘lizard’</div>
+    <div class="item">b. [ʃima]       ‘fish’</div>
+    <div class="item">c. [noʃinto]    ‘my daughter’</div>
+    <div class="item">d. [seɾi]       ‘tobacco’</div>
+    <div class="item">e. [tisoni]     ‘vulture’</div>
+    <div class="item">f. [posuɾo]     ‘plaintain’</div>
+    <div class="item">g. [tuʃiɾi]     ‘scissors’</div>
+    <div class="item">h. [suβani]     ‘cuckoo’</div>
+  </div>
+
+  <p>
+    Based on the above data, are [s] and [ʃ] allophones of the same phoneme
+    or of different phonemes?
+  </p>
+
+</div>
+
+<script>
+const visibleBlock = document.getElementById("exam-question");
+
+const copiedVersion = `Matsigenka is an indigenous language of southeastern Peru spoken by about 10,000 people in the foothills between the Amazon rainforest and the Andes. Copy-pasting the dataset does not work. If you need a spoken version of this exam for accessibility reasons, please contact the course staff.
+
+a. [saniɾi]     ‘lizard’
+b. [sima]       ‘fish’
+c. [nosinto]    ‘my daughter’
+d. [ʃeɾi]       ‘tobacco’
+e. [tisoni]     ‘vulture’
+f. [posuɾo]     ‘plaintain’
+g. [tusiɾi]     ‘scissors’
+h. [suβani]     ‘cuckoo’
+
+Based on the above data, are [s] and [ʃ] allophones of the same phoneme or of different phonemes?`;
+
+visibleBlock.addEventListener("copy", function (event) {
+  event.preventDefault();
+  event.clipboardData.setData("text/plain", copiedVersion);
+});
+
+visibleBlock.addEventListener("cut", function (event) {
+  event.preventDefault();
+});
+</script>
+
+</body>
+</html>
